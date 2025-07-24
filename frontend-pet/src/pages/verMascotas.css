@@ -1,0 +1,86 @@
+.ver-mascotas-container {
+  max-width: 1900px;
+  margin:auto; /* Aumenta este valor */
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background-color: #fffdf5;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ver-mascotas-container hr {
+  width: auto;
+  height: 2px;
+  background-color: #ff6f00;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto 2rem;
+  animation: expandLine 1s ease;
+}
+
+
+.ver-mascotas-container h2 {
+  text-align: center;
+  color: #ff6f00;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tarjetas-mascotas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas fijas */
+  gap: 2rem;
+  justify-items: center;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border-left: 8px solid #4caf50;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.tarjeta h3 {
+  color: #ff6f00;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.tarjeta p {
+  margin: 0.3rem 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.contenido-mascota {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto-mascota {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.imagen-mascota img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #ff6f00;
+  padding: 5px;
+  background-color: #fffbe6;
+}

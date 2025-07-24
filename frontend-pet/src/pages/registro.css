@@ -1,0 +1,175 @@
+ /* Variables de color */
+        .registerpet-root {
+            --registerpet-green: #2e7d32;  /* Verde oscuro */
+            --registerpet-orange: #e65100;  /* Naranja oscuro */
+            --registerpet-light: #f5f5f5;
+            --registerpet-white: #ffffff;
+            --registerpet-gray: #757575;
+            --registerpet-light-gray: #dddddd;
+        }
+
+        /* Estilos base */
+        .registerpet-body {
+            background-color: var(--registerpet-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .registerpet-container {
+            max-width: 1450px;
+            margin: 0 auto;
+            margin-top: 2.75rem;
+            margin-bottom: 2.75rem;
+        }
+
+        /* Contenedor del formulario */
+        .registerpet-form-container {
+            background-color: var(--registerpet-white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            height: 100%;
+        }
+
+        /* Encabezado */
+        .registerpet-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .registerpet-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--registerpet-orange);
+            margin-bottom: 1rem;
+        }
+
+        .registerpet-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .registerpet-subtitle {
+            color: var(--registerpet-gray);
+            font-size: 1rem;
+        }
+
+        /* Formulario */
+        .registerpet-form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .registerpet-form-label {
+            font-weight: 600;
+            color: var(--registerpet-gray);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .registerpet-input-group {
+            position: relative;
+        }
+
+        .registerpet-input-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--registerpet-gray);
+        }
+
+        .registerpet-form-control {
+            width: 100%;
+            padding: 12px 12px 12px 40px;
+            border: 1px solid var(--registerpet-light-gray);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .registerpet-form-control:focus {
+            border-color: var(--registerpet-green);
+            box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+            outline: none;
+        }
+
+        /* Botón */
+        .registerpet-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .registerpet-btn-primary {
+            background-color: var(--registerpet-orange);
+            color: var(--registerpet-white);
+        }
+
+        .registerpet-btn-primary:hover {
+            background-color: #bf360c;
+            transform: translateY(-2px);
+        }
+
+        /* Helpers */
+        .registerpet-text-primary {
+            color: var(--registerpet-green) !important;
+        }
+
+        .registerpet-text-secondary {
+            color: var(--registerpet-orange) !important;
+        }
+
+        .registerpet-text-muted {
+            color: var(--registerpet-gray);
+        }
+
+        /* Divider */
+        .registerpet-divider {
+            display: flex;
+            align-items: center;
+            margin: 1.5rem 0;
+            color: var(--registerpet-gray);
+        }
+
+        .registerpet-divider::before,
+        .registerpet-divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid var(--registerpet-light-gray);
+        }
+
+        .registerpet-divider::before {
+            margin-right: 1rem;
+        }
+
+        .registerpet-divider::after {
+            margin-left: 1rem;
+        }
+
+        /* Enlaces */
+        .registerpet-link {
+            color: var(--registerpet-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .registerpet-link:hover {
+            text-decoration: underline;
+            color: #1b5e20;
+        }
+
+        /* Columnas para campos lado a lado */
+        .registerpet-row {
+            display: flex;
+            gap: 1rem;
+        }
+        .registerpet-col {
+            flex: 1;
+        }

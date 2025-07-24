@@ -1,0 +1,171 @@
+/* Contenedor principal con efecto glass */
+.contenedor-citas {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: aparecer 0.8s ease forwards;
+    opacity: 0;
+}
+
+.contenedor-citas hr {
+  width: auto;
+  height: 3.5px;
+  background-color: #69d8ea;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto 2rem;
+  animation: expandLine 1s ease;
+}
+
+/* Animación de entrada suave */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título con efecto brillante */
+.contenedor-citas h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #1a2a6c;
+    margin-bottom: 2.5rem;
+}
+
+/* Buscador */
+.buscador {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    border: 2px solid #cce7ff;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.buscador:focus {
+    border-color: #3399ff;
+    box-shadow: 0 0 5px rgba(51, 153, 255, 0.5);
+    transform: scale(1.01);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.citas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 🔄 Fuerza 2 columnas */
+    gap: 2rem;
+    min-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .citas-grid {
+        grid-template-columns: 1fr; /* 📱 En pantallas pequeñas: una sola columna */
+    }
+}
+
+/* Tarjeta de cita */
+.card-cita {
+    background: #d5ffff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 6px solid #69d8ea;
+    position: relative;
+}
+
+.card-cita:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-cita h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #1c3d5a;
+    font-weight: bold;
+}
+
+.card-cita p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Estado */
+.estado {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Colores por estado */
+.estado.programada {
+    background-color: #e6f4ff;
+    color: #0066cc;
+}
+
+.estado.completada {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.estado.cancelada {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contenedor-citas {
+        padding: 1rem;
+    }
+
+    .card-cita {
+        padding: 1rem;
+    }
+
+    .card-cita h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-cita p {
+        font-size: 0.9rem;
+    }
+}
+.dashboard-vet-citas h2 {
+  color: #00a86b;
+  border-bottom: 2px solid #ffa500;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 4 rem;
+}
+
+/* Centrar tarjetas si solo hay una o dos */
+.citas-grid:has(.card-cita:nth-child(2)) {
+    justify-content: center;
+}
+
+.citas-grid:only-child,
+.citas-grid:has(.card-cita:only-child) {
+    display: flex;
+    justify-content: center;
+}

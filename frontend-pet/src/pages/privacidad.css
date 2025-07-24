@@ -1,0 +1,84 @@
+/* privacidad.css */
+
+.privacidad-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;  
+  color: #333;
+  line-height: 1.6;
+}
+
+.privacidad-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.privacidad-header h1 {
+  color: #58b368;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.privacidad-header p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Sección estilo acordeón */
+.accordion-section {
+  border-radius: 20px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  border: 1px solid #e0dcdc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.accordion-header {
+  background: linear-gradient(to right, #84c67e, #e39f5f);
+  color: white;
+  padding: 20px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header .arrow {
+  font-size: 24px;
+  transform: rotate(0deg);
+}
+
+.accordion-body {
+  padding: 25px 30px;
+  background: white;
+  font-size: 16px;
+}
+
+.accordion-body ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.accordion-body ul li {
+  list-style-type: disc;
+  margin-bottom: 6px;
+}
+
+.accordion-body a {
+  color: #58b368;
+  text-decoration: none;
+}
+/* Extra para animar el ícono y mantener diseño interactivo */
+
+.arrow {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(90deg);
+}

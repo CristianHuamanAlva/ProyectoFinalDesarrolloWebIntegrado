@@ -1,0 +1,135 @@
+.registrar-cita__container {
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registrar-cita__loading {
+  text-align: center;
+  padding: 20px;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.registrar-cita__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registrar-cita__title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.registrar-cita__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.registrar-cita__label {
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.registrar-cita__input,
+.registrar-cita__select,
+.registrar-cita__textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background: #ffffff;
+  color: #2c3e50;
+  font-family: inherit;
+}
+
+.registrar-cita__input:focus,
+.registrar-cita__select:focus,
+.registrar-cita__textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.registrar-cita__input--disabled {
+  background: #f8f9fa;
+  color: #6c757d;
+  cursor: not-allowed;
+  font-weight: 500;
+}
+
+.registrar-cita__textarea {
+  resize: vertical;
+  min-height: 70px;
+  font-family: inherit;
+}
+
+.registrar-cita__select {
+  cursor: pointer;
+}
+
+.registrar-cita__select option {
+  background: #ffffff;
+  color: #2c3e50;
+  padding: 8px;
+}
+
+.registrar-cita__button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background:  #65C178 ;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.registrar-cita__button:hover {
+  background: #2980b9;
+}
+
+.registrar-cita__button:active {
+  transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registrar-cita__container {
+    max-width: 100%;
+    margin: 0 10px;
+    padding: 15px;
+  }
+
+  .registrar-cita__title {
+    font-size: 1.2rem;
+  }
+
+  .registrar-cita__input,
+  .registrar-cita__select,
+  .registrar-cita__textarea {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .registrar-cita__button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
